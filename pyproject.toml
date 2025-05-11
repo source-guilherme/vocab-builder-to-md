@@ -1,0 +1,11 @@
+[project]
+name = "vocab-builder-to-md"
+version = "0.1.0"
+description = "A lightweight tool to export vocabulary data from SQLite databases into Markdown files. Features include filtering by book or date, metadata inclusion, and a Markdown preview."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["ttkbootstrap>=1.10.1", "tkinter"]
+
+[build-system]
+requires = ["pip-tools"]
+build-backend = "setuptools.build_meta"
