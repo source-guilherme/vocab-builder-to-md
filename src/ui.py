@@ -9,9 +9,10 @@ import tempfile
 import shutil
 import subprocess
 import threading
-from config import load_theme, save_theme
-from exporter import export_phrases
-from preview import show_preview
+from src.config import load_theme, save_theme
+from src.exporter import export_phrases
+from src.preview import show_preview
+from src.window_utils import set_window_icon, center_window
 import time
 
 
@@ -21,9 +22,7 @@ class SQLitePhraseExporter:
         self.root.title("Vocabulary Builder Exporter")
         self.root.resizable(False, False)
 
-        self.icon_path = os.path.join(os.path.dirname(__file__), "icon.ico")
-        if os.path.exists(self.icon_path):
-            self.root.iconbitmap(self.icon_path)
+        set_window_icon(self.root)
 
         self.db_path = ""
         self.output_dir = ""
@@ -40,11 +39,7 @@ class SQLitePhraseExporter:
         self.create_widgets()
 
     def set_icon_for_toplevel(self, toplevel):
-        if os.path.exists(self.icon_path):
-            try:
-                toplevel.iconbitmap(self.icon_path)
-            except Exception:
-                pass
+        set_window_icon(toplevel)
 
     def load_theme(self):
         theme = load_theme()
@@ -201,8 +196,7 @@ class SQLitePhraseExporter:
         top.title(title)
         top.resizable(False, False)
 
-        if os.path.exists(self.icon_path):
-            top.iconbitmap(self.icon_path)
+        set_window_icon(top)
 
         frame = ttk.Frame(top, padding=15)
         frame.pack(fill=BOTH, expand=True)
@@ -278,10 +272,7 @@ class SQLitePhraseExporter:
         ok_button = ttk.Button(frame, text="OK", command=top.destroy)
         ok_button.grid(row=1, column=0, columnspan=2, pady=15)
 
-        top.update_idletasks()
-        x = (top.winfo_screenwidth() - top.winfo_width()) // 2
-        y = (top.winfo_screenheight() - top.winfo_height()) // 2
-        top.geometry(f"+{x}+{y}")
+        center_window(top)
 
         top.transient(self.root)
         top.grab_set()

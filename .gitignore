@@ -1,37 +1,80 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
 
 # SQLite database files
 *.sqlite3
 
-# Environment variables and virtual environments
-.env
-*.env
-.venv/
-venv/
-env/
-
-# Logs and debug files
-*.log
-*.tmp
-
-# IDE-specific files
-.vscode/
-.idea/
-
-# OS-specific files
-.DS_Store
-Thumbs.db
-
-# Temporary files
-*.swp
-*.swo
-*.bak
-*.tmp
-
-# Build artifacts
-dist/
+# Distribution / packaging
 build/
+dist/
 *.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+*.whl
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# VS Code
+.vscode/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# PyInstaller output
+*.exe
+*.dll
+
+# Project-specific
+config.json
+
+# Ignore icon cache if generated
+icon.ico
+
+# Ignore lock files
+*.lock
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore test output
+test-output/
