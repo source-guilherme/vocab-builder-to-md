@@ -1,39 +1,33 @@
-# Contributing to Vocabulary Builder to Markdown
+# Contributing to Vocabulary Builder Exporter
 
-Thank you for considering contributing to this project! Here are some guidelines to help you get started.
+Thank you for considering contributing!
 
-## Setting Up the Development Environment
+## How to Contribute
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/vocab-builder-to-md.git
-   cd vocab-builder-to-md
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. **Fork the repository** and clone your fork.
+2. **Create a new branch** for your feature or bugfix.
+3. **Make your changes** with clear commit messages.
+4. **Test your changes** locally.
+5. **Submit a pull request** to the `main` branch.
 
-## Coding Standards
+## Code Style
 
-- Follow PEP 8 for Python code.
-- Use meaningful variable and function names.
-- Add comments for complex logic.
+- Follow PEP8 for Python code.
+- Use descriptive variable and function names.
+- Keep UI logic and utility functions separated.
 
-## Submitting Changes
+## Adding Features
 
-1. Create a new branch for your changes:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-2. Commit your changes with a descriptive message:
-   ```bash
-   git commit -m "Add feature: your feature name"
-   ```
-3. Push your branch and open a pull request.
+- Add new features in a modular way.
+- Update the README if user-facing features change.
 
 ## Reporting Issues
 
-If you encounter a bug or have a feature request, please open an issue on GitHub.
+- Please use the GitHub Issues page.
+- Include steps to reproduce, expected behavior, and screenshots if possible.
 
-Thank you for contributing!
+## Questions
+
+Open an issue or discussion on GitHub.
+
+Thank you for your contributions!
