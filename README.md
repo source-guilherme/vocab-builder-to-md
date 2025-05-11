@@ -4,6 +4,8 @@ A GUI tool to export vocabulary from a SQLite database to Markdown files, with f
 
 ## Features
 
+![Main UI](./images/screenshot-ui.png)
+
 - Export vocabulary by book and/or date
 - Markdown preview before export
 - Dark mode support
