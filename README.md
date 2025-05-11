@@ -12,6 +12,13 @@ A GUI tool to export vocabulary from a SQLite database to Markdown files, with f
 
 ## Installation
 
+## Download
+
+Download the latest version from the [Releases](https://github.com/source-guilherme/vocab-builder-to-md/releases) page.
+
+**Platform**: Windows
+**Latest version**: [v0.1.0](https://github.com/source-guilherme/vocab-builder-to-md/releases/tag/v0.1.0)
+
 ### Run from Source
 
 1. Clone the repository:
@@ -43,6 +50,9 @@ Or build your own (see Packaging below).
 5. Click "Export!" to save the files.
 
 ## Packaging as Executable
+
+**Note:** Creating a standalone executable is only supported for Windows.  
+If you are on Linux, please run the application from source (see "Run from Source" above).
 
 To create a standalone executable (Windows):
 
